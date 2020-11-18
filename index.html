@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Игра "Угадай число"</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Игра "Угадай число"</h1>
+    <p>Попробуйте и угадайте случайно число от 0 до 100.</p>
+    <p>У вас есть 10 попыток, чтобы угадать верное число.</p>
+    </br>
+    <div id="wrapper">
+        <form class="form">
+            <label for="guessField" id="guess">Угадайте число</label>
+            <br />
+            <div id="record">Пока рекорда нету</div>
+            <input type="text" id="guessField" class="guessField">
+            <input type="submit" id="subt" value="Подтвердить" class="guessSubmit">
+        </form>
+
+        <div class="resultParas">
+            <p >Прошлые попытки: <span class="guesses"></span></p>
+            <p >Попыток осталось: <span class="lastResult">10</span></p>
+            <p class="lowOrHi"></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
